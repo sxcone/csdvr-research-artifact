@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import csv
+import math
 import random
 from collections import defaultdict
 from pathlib import Path
@@ -72,12 +73,12 @@ def main() -> None:
                 comparator = number(indexed[(trajectory, baseline)][field])
                 by_task[task_for[trajectory]].append(direction * (reference - comparator))
             task_means = {
-                task: sum(values) / len(values) for task, values in by_task.items()
+                task: math.fsum(values) / len(values) for task, values in by_task.items()
             }
-            estimate = sum(task_means.values()) / len(tasks)
+            estimate = math.fsum(task_means.values()) / len(tasks)
             rng = random.Random(SEED + baseline_index * 100 + metric_index)
             bootstrap_values = sorted(
-                sum(task_means[rng.choice(tasks)] for _ in tasks) / len(tasks)
+                math.fsum(task_means[rng.choice(tasks)] for _ in tasks) / len(tasks)
                 for _ in range(BOOTSTRAPS)
             )
             output.append(
