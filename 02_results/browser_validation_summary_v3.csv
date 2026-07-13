@@ -1,0 +1,4 @@
+method,n_runs,success,residue,detection_f1,critical_recall,rollback_use,unnecessary_repair,token_cost,cost_norm_success
+NoCheck,100,0.0000,0.7826,0.0000,0.0000,0.0000,0.0000,720.00,0.0000
+FinalVerifier,100,0.3623,0.6377,1.0000,1.0000,0.0000,0.0000,2127.30,0.1479
+C-SDVR,100,1.0000,0.0000,1.0000,1.0000,0.6232,0.0000,2124.10,0.4237

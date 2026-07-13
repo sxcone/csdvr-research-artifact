@@ -1,0 +1,7 @@
+model_alias,linguistic_phenomenon,n,object_accuracy,field_accuracy,constraint_accuracy,forbidden_side_effect_recall,invalid_json_rate,mean_token_cost
+Model-A,conditional_negative_constraint,80,1.0,1.0,1.0,0.6,0.0,153.5625
+Model-A,ellipsis_multi_object_preservation,80,0.775,0.775,0.775,1.0,0.0,166.325
+Model-A,pronoun_coreference,80,1.0,1.0,1.0,0.34375,0.0,159.25
+Model-B,conditional_negative_constraint,80,0.875,0.8875,1.0,0.98125,0.0,157.125
+Model-B,ellipsis_multi_object_preservation,80,0.7625,0.7625,0.7875,1.0,0.0,167.4625
+Model-B,pronoun_coreference,80,1.0,1.0,1.0,0.4,0.0,164.9125

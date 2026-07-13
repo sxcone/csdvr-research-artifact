@@ -1,0 +1,7 @@
+model,policy,domain,natural_error_type,count
+deepseek-v4-flash,LLMJudgeFinal,file,none,2
+deepseek-v4-flash,LLMJudgeRetry,file,none,2
+deepseek-v4-flash,NoCheck,file,none,2
+deepseek-v4-pro,LLMJudgeFinal,file,none,2
+deepseek-v4-pro,LLMJudgeRetry,file,none,2
+deepseek-v4-pro,NoCheck,file,none,2

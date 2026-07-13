@@ -1,0 +1,6 @@
+label,n,percent_agreement,cohen_kappa,preannotator_a_positive_rate,preannotator_b_positive_rate
+target_object,240,1,,,
+target_field,240,1,,,
+expected_state,240,1,,,
+forbidden_effect_set,240,0.5333333333333333,,,
+paraphrase_preserves_meaning,240,1,1.0,1,1

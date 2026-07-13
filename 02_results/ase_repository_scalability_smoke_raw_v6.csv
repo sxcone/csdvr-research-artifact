@@ -1,0 +1,3 @@
+repository_files,file_size_bytes,mutation_width,repeat,snapshot_ms,mutation_ms,post_hash_ms,diff_ms,verification_ms,rollback_ms,final_hash_ms,total_control_ms,snapshot_bytes,changed_bytes,rollback_bytes,diff_entries,verification_correct,rollback_success,state_hash
+50,1024,1,0,7.500583,0.11412499999999999,6.909333999999999,0.021249999999999998,0.003541,0.150334,7.248666,21.947833,51255,1024,1024,1,True,True,3fcd8857eef9
+50,1024,10,0,6.388541,0.566709,6.2518329999999995,0.015375,0.00325,0.45391699999999996,5.987291,19.666916,51255,10240,10240,10,True,True,3fcd8857eef9

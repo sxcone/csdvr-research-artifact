@@ -1,0 +1,6 @@
+model,policy,policy_rows,unique_trajectories,initial_success,initial_residue,final_success,final_residue,integrity_preserving_outcome,safe_stop,repair_trigger,repair_success,unnecessary_repair,repair_induced_side_effect,judge_false_success,judge_false_alarm,token_cost,call_count
+deepseek-v4-flash,C-SDVR-LLMRepair,2,2,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,369.5,1.0
+deepseek-v4-flash,C-SDVR-OracleUpperBound,2,2,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,369.5,1.0
+deepseek-v4-flash,FinalReplay,2,2,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,369.5,1.0
+deepseek-v4-flash,JudgeRepair,2,2,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,813.0,2.0
+deepseek-v4-flash,NoCheck,2,2,1.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,369.5,1.0

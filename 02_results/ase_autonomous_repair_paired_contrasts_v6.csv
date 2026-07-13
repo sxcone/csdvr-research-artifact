@@ -1,0 +1,17 @@
+reference_policy,baseline_policy,metric,effect_label,positive_favors_reference,task_clusters,paired_trajectories,estimate,ci95_low,ci95_high,bootstrap_resamples,seed
+C-SDVR-LLMRepair,NoCheck,final_success,success difference,1,40,240,0.07083333333333333,0.025,0.13333333333333333,10000,20260714
+C-SDVR-LLMRepair,NoCheck,final_residue,residue reduction,1,40,240,0.0375,0.008333333333333333,0.075,10000,20260715
+C-SDVR-LLMRepair,NoCheck,integrity_preserving_outcome,integrity-outcome difference,1,40,240,0.0875,0.029166666666666664,0.15833333333333333,10000,20260716
+C-SDVR-LLMRepair,NoCheck,token_cost,token saving,1,40,240,-81.03333333333333,-156.69166666666666,-24.258333333333333,10000,20260717
+C-SDVR-LLMRepair,FinalReplay,final_success,success difference,1,40,240,0.0375,0.0,0.09583333333333334,10000,20260814
+C-SDVR-LLMRepair,FinalReplay,final_residue,residue reduction,1,40,240,0.016666666666666666,0.0,0.0375,10000,20260815
+C-SDVR-LLMRepair,FinalReplay,integrity_preserving_outcome,integrity-outcome difference,1,40,240,0.05416666666666666,0.008333333333333333,0.11666666666666667,10000,20260816
+C-SDVR-LLMRepair,FinalReplay,token_cost,token saving,1,40,240,-16.30833333333333,-40.95,1.9500000000000004,10000,20260817
+C-SDVR-LLMRepair,JudgeRepair,final_success,success difference,1,40,240,0.08333333333333333,0.029166666666666664,0.15,10000,20260914
+C-SDVR-LLMRepair,JudgeRepair,final_residue,residue reduction,1,40,240,0.05416666666666666,0.016666666666666666,0.10416666666666666,10000,20260915
+C-SDVR-LLMRepair,JudgeRepair,integrity_preserving_outcome,integrity-outcome difference,1,40,240,0.1,0.0375,0.175,10000,20260916
+C-SDVR-LLMRepair,JudgeRepair,token_cost,token saving,1,40,240,674.1083333333333,560.5916666666667,799.5791666666667,10000,20260917
+C-SDVR-LLMRepair,C-SDVR-OracleUpperBound,final_success,success difference,1,40,240,-0.016666666666666666,-0.04583333333333333,0.0,10000,20261014
+C-SDVR-LLMRepair,C-SDVR-OracleUpperBound,final_residue,residue reduction,1,40,240,0.0,0.0,0.0,10000,20261015
+C-SDVR-LLMRepair,C-SDVR-OracleUpperBound,integrity_preserving_outcome,integrity-outcome difference,1,40,240,0.0,0.0,0.0,10000,20261016
+C-SDVR-LLMRepair,C-SDVR-OracleUpperBound,token_cost,token saving,1,40,240,-81.03333333333333,-155.33333333333334,-24.429166666666667,10000,20261017

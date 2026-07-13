@@ -1,0 +1,7 @@
+*.csv -diff
+*.jsonl -diff
+*.pdf binary
+*.png binary
+*.svg -whitespace
+*.cls -whitespace
+*.bst -whitespace

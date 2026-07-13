@@ -1,0 +1,7 @@
+model,policy,runs,success,residue,repair_trigger,rollback_trigger,repair_success,rollback_success,invalid_json_rate,invalid_repair_json_rate,invalid_judge_rate,action_json_repair_count,repair_json_repair_count,judge_json_repair_count,judge_false_success,judge_side_effect_recall,token_cost,repair_call_count
+deepseek-v4-flash,LLMJudgeFinal,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,633.5,0.0
+deepseek-v4-flash,LLMJudgeRetry,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,633.0,0.0
+deepseek-v4-flash,NoCheck,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,297.0,0.0
+deepseek-v4-pro,LLMJudgeFinal,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,629.0,0.0
+deepseek-v4-pro,LLMJudgeRetry,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,629.0,0.0
+deepseek-v4-pro,NoCheck,2,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,291.5,0.0

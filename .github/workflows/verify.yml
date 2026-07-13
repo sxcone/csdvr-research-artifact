@@ -1,0 +1,44 @@
+name: Verify research artifact
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Compile principal Python scripts
+        run: |
+          python -m py_compile \
+            01_experiments/run_ase_autonomous_repair_v6.py \
+            01_experiments/run_ase_repository_scalability_v6.py \
+            01_experiments/analyze_ase_paired_v6.py \
+            01_experiments/audit_ase_revision_v6.py
+
+      - name: Regenerate paired contrasts
+        run: python 01_experiments/analyze_ase_paired_v6.py
+
+      - name: Run independent numeric audit
+        run: python 01_experiments/audit_ase_revision_v6.py
+
+      - name: Require a clean deterministic audit
+        run: |
+          grep -q "Checks: 52" 02_results/ase_revision_numeric_audit_v6.md
+          grep -q "Failures: 0" 02_results/ase_revision_numeric_audit_v6.md
+          git diff --exit-code -- \
+            02_results/ase_autonomous_repair_aggregate_v6.csv \
+            02_results/ase_autonomous_repair_paired_contrasts_v6.csv \
+            02_results/ase_autonomous_repair_paired_contrasts_v6.md \
+            02_results/ase_revision_numeric_audit_v6.md

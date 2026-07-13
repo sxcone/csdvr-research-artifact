@@ -1,0 +1,2 @@
+method,n_runs,success,residue,detection_f1,critical_recall,rollback_use,unnecessary_repair,repair_call_count,invalid_json_rate,token_cost
+C-SDVR,2,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,371.00
