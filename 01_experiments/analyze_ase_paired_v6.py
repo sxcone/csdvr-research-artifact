@@ -44,6 +44,11 @@ def percentile(sorted_values: list[float], probability: float) -> float:
     return sorted_values[index]
 
 
+def stable_float(value: float) -> str:
+    """Serialize computed statistics identically across supported Python versions."""
+    return f"{value:.12f}"
+
+
 def main() -> None:
     with RAW.open(newline="", encoding="utf-8") as handle:
         rows = list(csv.DictReader(handle))
@@ -84,9 +89,9 @@ def main() -> None:
                     "positive_favors_reference": 1,
                     "task_clusters": len(tasks),
                     "paired_trajectories": len(trajectories),
-                    "estimate": estimate,
-                    "ci95_low": percentile(bootstrap_values, 0.025),
-                    "ci95_high": percentile(bootstrap_values, 0.975),
+                    "estimate": stable_float(estimate),
+                    "ci95_low": stable_float(percentile(bootstrap_values, 0.025)),
+                    "ci95_high": stable_float(percentile(bootstrap_values, 0.975)),
                     "bootstrap_resamples": BOOTSTRAPS,
                     "seed": SEED + baseline_index * 100 + metric_index,
                 }

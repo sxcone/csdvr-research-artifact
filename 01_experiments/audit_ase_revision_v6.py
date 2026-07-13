@@ -217,10 +217,11 @@ def main() -> None:
     }
     for key, expected in expected_contrasts.items():
         observed = observed_contrasts.get(key)
+        observed_text = "missing" if observed is None else f"{observed:.12f}"
         check(
             f"paired contrast estimate: {key[0]} {key[1]}",
             observed is not None and abs(observed - expected) < 1e-12,
-            f"observed={observed}, expected={expected}",
+            f"observed={observed_text}, expected={expected:.12f}",
         )
 
     failures = [item for item in checks if not item[1]]
