@@ -1,6 +1,6 @@
 # C-SDVR Research Artifact
 
-This private repository contains the anonymized manuscript source, experiment
+This public repository contains the manuscript source, experiment
 code, raw records, derived tables, and numeric audits for:
 
 > **C-SDVR: Cost-Aware Runtime Verification and Local Recovery for
@@ -130,5 +130,5 @@ The committed preview is
 - External publication, payment, email, production deployment, and other
   non-compensable effects are outside the evaluated scope.
 
-This is an unpublished private review artifact. No public reuse license is
-granted at this stage.
+This is an unpublished research artifact. No public reuse license is granted
+at this stage.

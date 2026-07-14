@@ -27,7 +27,7 @@ which strata are principal, supporting, or exploratory.
 
 - API credentials and `.env` files
 - Reviewer reports, response drafts, and private author notes
-- Local usernames, terminal logs that expose credentials, and machine metadata
+- Local terminal logs that expose credentials and machine metadata
 - LaTeX intermediate files and temporary execution directories
 - Redundant archive copies and large publication-format TIFF duplicates
 
