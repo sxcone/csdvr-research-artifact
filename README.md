@@ -1,5 +1,7 @@
 # C-SDVR Research Artifact
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21359453.svg)](https://doi.org/10.5281/zenodo.21359453)
+
 This public repository contains the manuscript source, experiment
 code, raw records, derived tables, and numeric audits for:
 
@@ -122,8 +124,11 @@ The artifact is maintained by Xiuchi Sun, School of Mathematics, Southwest
 Jiaotong University. ORCID:
 [0009-0007-5812-3870](https://orcid.org/0009-0007-5812-3870).
 
-Citation metadata are provided in `CITATION.cff`. Cite the archived `v1.0.0`
-release after its Zenodo DOI is issued; the DOI will also be added here.
+Citation metadata are provided in `CITATION.cff`. For reproducibility, cite the
+immutable Zenodo `v1.0.0` release using version DOI
+[`10.5281/zenodo.21359453`](https://doi.org/10.5281/zenodo.21359453). The
+all-version record is available under concept DOI
+[`10.5281/zenodo.21359452`](https://doi.org/10.5281/zenodo.21359452).
 
 ## Integrity and Scope
 
