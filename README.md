@@ -116,6 +116,15 @@ latexmk -pdf main.tex
 The committed preview is
 `paper/C-SDVR_Automated_Software_Engineering_submission_preview.pdf`.
 
+## Citation
+
+The artifact is maintained by Xiuchi Sun, School of Mathematics, Southwest
+Jiaotong University. ORCID:
+[0009-0007-5812-3870](https://orcid.org/0009-0007-5812-3870).
+
+Citation metadata are provided in `CITATION.cff`. Cite the archived `v1.0.0`
+release after its Zenodo DOI is issued; the DOI will also be added here.
+
 ## Integrity and Scope
 
 - Initial actions are shared across all five policy replays within each paired
