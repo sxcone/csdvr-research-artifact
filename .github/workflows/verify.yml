@@ -25,13 +25,20 @@ jobs:
             01_experiments/run_ase_autonomous_repair_v6.py \
             01_experiments/run_ase_repository_scalability_v6.py \
             01_experiments/analyze_ase_paired_v6.py \
-            01_experiments/audit_ase_revision_v6.py
+            01_experiments/audit_ase_revision_v6.py \
+            01_experiments/resolve_contract_verifier_major_revisions_v18.py
 
       - name: Regenerate paired contrasts
         run: python 01_experiments/analyze_ase_paired_v6.py
 
       - name: Run independent numeric audit
         run: python 01_experiments/audit_ase_revision_v6.py
+
+      - name: Run four-task contract/verifier recheck
+        run: |
+          python 01_experiments/resolve_contract_verifier_major_revisions_v18.py
+          grep -q "Local task/verifier reruns passing: \*\*4/4\*\*" 02_results/contract_verifier_major_revision_report_v18.md
+          grep -q '"all_four_pass_local_rerun": true' 02_results/contract_verifier_major_revision_evidence_v18.json
 
       - name: Require a clean deterministic audit
         run: |
