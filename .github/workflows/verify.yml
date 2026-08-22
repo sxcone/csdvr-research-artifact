@@ -19,6 +19,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Install verifier runtime dependencies
+        run: python -m pip install --disable-pip-version-check requests==2.32.5 PyYAML==6.0.2
+
       - name: Compile principal Python scripts
         run: |
           python -m py_compile \
