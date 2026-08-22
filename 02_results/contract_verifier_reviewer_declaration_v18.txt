@@ -1,0 +1,13 @@
+Independent Reviewer Declaration v18 — Recorded Attestation
+
+Reviewer ID: EXT-R1
+Completion date recorded: 2026-08-23
+Recorded result: B08, B10, B11, B12 — PASS
+
+The project author/user explicitly stated on 2026-08-23 that a real human reviewer had reviewed the revised B08, B10, B11, and B12 materials and found them acceptable.
+
+Recommended wording to retain from the real reviewer:
+
+“I confirm that I had no role in constructing the audited tasks, contracts, verifier, prompts, or experimental results, and that I froze my ratings before seeing model, policy, failure, residue, or outcome data. I reviewed the revised B08, B10, B11, and B12 materials and found all four acceptable.”
+
+Provenance: this file was prepared by ChatGPT from the author's/user's attestation. It is not a substitute for the reviewer's own signed declaration, email, or other independently supplied record.
