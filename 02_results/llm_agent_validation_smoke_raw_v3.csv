@@ -1,3 +1,0 @@
-seed,task_id,domain,method,severity,success,residue,target_satisfied,initial_action_valid,initial_execution_ok,initial_fault,detected,repair_attempted,rollback_used,unnecessary_repair,repair_call_count,invalid_json_count,token_cost,token_cost_source,final_state_hash,error
-0,LLMF01,file,C-SDVR,critical,1,0,1,1,1,0,0,0,0,0,0,0,360,actual,4b4b33ae9b8e,
-0,LLMW01,web_form,C-SDVR,critical,1,0,1,1,1,0,0,0,0,0,0,0,382,actual,3aea81065d31,

@@ -1,8 +1,0 @@
-method,success,residue,unnecessary_repair,token_cost,cost_norm_success,pareto_frontier,residue_constrained,low_unnecessary_repair,best_weighted_rank,worst_weighted_rank,tested_cost_profiles
-NoCheck,0.125,0.7416,0.0,947.0,0.1082,True,False,True,6,6,5
-FinalVerifier,0.3029,0.6571,0.0336,2116.33,0.1295,False,False,True,5,5,5
-StepVerifier,0.125,0.7416,0.0,1416.68,0.0826,False,False,True,7,7,5
-ReflectionRetry,0.7438,0.2162,0.0336,3178.35,0.1997,True,True,True,3,3,5
-C-SDVR-NoRollback,0.3046,0.6554,0.0087,1959.88,0.1478,True,False,True,4,4,5
-C-SDVR-NoSeverity,0.7267,0.1795,0.0336,2210.6,0.2898,False,True,True,2,2,5
-C-SDVR,0.7267,0.1795,0.0087,2039.88,0.3088,True,True,True,1,1,5

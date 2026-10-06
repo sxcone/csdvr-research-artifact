@@ -1,5 +1,0 @@
-source,domain,method,detector_recall,repair_success_given_attempt,rollback_success_given_attempt,interpretation
-controlled_design_point,pooled,C-SDVR,0.9000,0.7800,0.9200,pre-registered imperfect-component design point; not fitted to deployment data
-live_closed_scope,file,C-SDVR,1.0000,1.0000,1.0000,oracle-like scripted recovery under complete local scope; upper-bound diagnostic
-live_closed_scope,form,C-SDVR,1.0000,1.0000,1.0000,oracle-like scripted recovery under complete local scope; upper-bound diagnostic
-browser_closed_scope,browser_form,C-SDVR,1.0000,1.0000,1.0000,oracle-like scripted recovery under complete local scope; upper-bound diagnostic

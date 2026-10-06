@@ -1,4 +1,0 @@
-method,n_runs,success,residue,detection_f1,critical_recall,rollback_use,unnecessary_repair,repair_call_count,invalid_json_rate,token_cost
-NoCheck,60,0.9333,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.1167,462.80
-FinalVerifier,60,0.9500,0.0167,1.0000,0.0000,0.0000,0.0000,0.0500,0.1167,563.98
-C-SDVR,60,1.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.0000,0.1333,434.35
