@@ -24,3 +24,4 @@ tmp/
 *.run.xml
 *.synctex.gz
 *.xdv
+/02_results/

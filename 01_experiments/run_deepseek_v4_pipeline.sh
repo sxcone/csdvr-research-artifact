@@ -11,7 +11,7 @@ export CSDVR_LLM_RETRIES="${CSDVR_LLM_RETRIES:-4}"
 export CSDVR_LLM_TIMEOUT="${CSDVR_LLM_TIMEOUT:-120}"
 export CSDVR_LLM_REQUEST_DELAY="${CSDVR_LLM_REQUEST_DELAY:-0.35}"
 
-LOG="sci_q34_v3/02_results/deepseek_v4_pipeline.log"
+LOG="02_results/deepseek_v4_pipeline.log"
 mkdir -p "$(dirname "$LOG")"
 
 {
@@ -26,17 +26,17 @@ mkdir -p "$(dirname "$LOG")"
 
   echo
   echo "== Smoke: LLM-agent, all configured models =="
-  python3 sci_q34_v3/01_experiments/run_llm_agent_validation_v4.py --smoke --smoke-all-models
+  python3 01_experiments/run_llm_agent_validation_v4.py --smoke --smoke-all-models
 
   echo
   echo "== Smoke: postcondition generation, all configured models =="
-  python3 sci_q34_v3/01_experiments/run_postcondition_generation_v4.py --smoke --smoke-all-models
+  python3 01_experiments/run_postcondition_generation_v4.py --smoke --smoke-all-models
 
   echo
   echo "== Smoke reports =="
-  cat sci_q34_v3/02_results/llm_agent_validation_smoke_report_v4.md
+  cat 02_results/llm_agent_validation_smoke_report_v4.md
   echo
-  cat sci_q34_v3/02_results/postcondition_generation_smoke_report_v4.md
+  cat 02_results/postcondition_generation_smoke_report_v4.md
 
   echo
   echo "== Smoke gate: select stable model(s) for full run =="
@@ -45,7 +45,7 @@ import csv
 from collections import defaultdict
 from pathlib import Path
 
-root = Path("sci_q34_v3/02_results")
+root = Path("02_results")
 agent = list(csv.DictReader((root / "llm_agent_validation_smoke_summary_v4.csv").open()))
 pc = list(csv.DictReader((root / "postcondition_generation_smoke_summary_v4.csv").open()))
 
@@ -87,23 +87,23 @@ env_path.write_text("\n".join(lines) + "\n")
 print("stable_models=" + ",".join(seen))
 print(env_path)
 PY
-  source sci_q34_v3/02_results/deepseek_v4_selected_models.env
+  source 02_results/deepseek_v4_selected_models.env
   echo "full_model_a=${CSDVR_LLM_MODEL_A}"
   echo "full_model_b=${CSDVR_LLM_MODEL_B:-}"
 
   echo
   echo "== Full: LLM-agent validation =="
-  python3 sci_q34_v3/01_experiments/run_llm_agent_validation_v4.py
+  python3 01_experiments/run_llm_agent_validation_v4.py
 
   echo
   echo "== Full: postcondition generation =="
-  python3 sci_q34_v3/01_experiments/run_postcondition_generation_v4.py
+  python3 01_experiments/run_postcondition_generation_v4.py
 
   echo
   echo "== Full reports =="
-  cat sci_q34_v3/02_results/llm_agent_validation_report_v4.md
+  cat 02_results/llm_agent_validation_report_v4.md
   echo
-  cat sci_q34_v3/02_results/postcondition_generation_report_v4.md
+  cat 02_results/postcondition_generation_report_v4.md
 
   echo
   echo "== Done =="
