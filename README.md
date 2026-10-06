@@ -2,6 +2,16 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21359453.svg)](https://doi.org/10.5281/zenodo.21359453)
 
+## ASE submission dataset: V8.10
+
+The 40-task cohort tables reported in “C-SDVR: Action Semantics for Contract-Aware Recovery in Repository Agents” are archived as a separate, data-only Zenodo record: [C-SDVR V8.10 cohort tables](https://doi.org/10.5281/zenodo.23190237).
+
+The record contains ESM_2.csv (800 paired task-policy-cap rows), ESM_3.csv (40 task-level summaries), a data dictionary, a README, and SHA-256 checksums. The rows are repeated comparisons over 40 task units and are conditional on the supplied contracts and the reported model/protocol stratum.
+
+This dataset DOI identifies the tables and documentation only. It does not archive the V8.10 controller, cohort-generation or replay pipeline, proposal pools, raw model histories, selected execution receipts, cumulative usage ledger, annotation forms, or packet-distribution records; the dataset alone does not enable a full end-to-end rerun. The Zenodo record carries an All rights reserved statement for the deposited author-prepared files; third-party benchmark material remains subject to its source terms.
+
+This ASE submission dataset is a separate version track from the software and evidence artifacts cited by this repository's existing DOI badge and CITATION.cff. The new dataset DOI does not replace or extend those release identifiers.
+
 This public repository contains the manuscript source, experiment
 code, raw records, derived tables, and numeric audits for:
 
@@ -144,5 +154,7 @@ all-version record is available under concept DOI
 - External publication, payment, email, production deployment, and other
   non-compensable effects are outside the evaluated scope.
 
-This is an unpublished research artifact. No public reuse license is granted
-at this stage.
+The repository's current source tree has no blanket public reuse license.
+Rights for individual archived versions are determined by their respective
+records. The separate V8.10 dataset record uses the rights statement in its
+Zenodo metadata; third-party content remains subject to its source terms.
