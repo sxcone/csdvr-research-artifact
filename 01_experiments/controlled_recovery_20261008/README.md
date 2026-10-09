@@ -23,4 +23,4 @@ Generated result JSON files and fetched tasks_opaque inputs are ignored by Git. 
 
 ## Archived data
 
-The sanitized case-level results, frozen protocols, input hash manifest, and portable source snapshot are prepared for a separate Zenodo companion deposit. DOI 10.5281/zenodo.23260432 is reserved and will register after upload and publication. The earlier 40-task cohort remains a separate record (DOI 10.5281/zenodo.23190237).
+The sanitized case-level results, frozen protocols, input hash manifest, and portable source snapshot are archived in the [Zenodo companion record](https://doi.org/10.5281/zenodo.23260432). The earlier 40-task cohort remains a separate record ([DOI](https://doi.org/10.5281/zenodo.23190237)).
