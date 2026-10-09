@@ -48,6 +48,8 @@ def main() -> None:
         raise RuntimeError(f"native agent-rollback binary missing: {h.AGENT_BINARY}")
 
     engine = h.load_module("csdvr_gitless_control_engine", h.ENGINE_PATH)
+    scratch = Path(tempfile.mkdtemp(prefix="csdvr_agentrollback_gitless_"))
+    try:
         cases = []
 
         for count in (1, 10, 100):
@@ -141,7 +143,6 @@ def main() -> None:
                 "agent_exact_backups_recovered": sum(agent_final.get(p) == baseline.get(p) for p in backup_paths),
                 "agent_score": h.score(agent_final, baseline),
                 "csdvr_score": h.score(csdvr_final, baseline),
-                "init_stdout": init_log["stdout"],
             })
 
         result = {
