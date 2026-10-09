@@ -1,0 +1,27 @@
+{
+  "study": "Best-effort selective recovery addendum for ignored-backup comparison",
+  "frozen_on": "2026-10-08",
+  "question": "After native operation-level selective revert, can the tool preserve the cleanup effect on allowed paths and restore every collateral file, including .gitignore-excluded backups?",
+  "task_repository_commit": "0956f8e46b31ead201e6a377f227d0cddd2419d9",
+  "task_fixture_archive": "yolofs_extended_task_inputs_gitblobs_20261007.tar",
+  "task_fixture_archive_sha256": "92af2363417a82d1b34065ba9716537701583d1dbe8c259e0f8a504fb25da9dc",
+  "tool_repository": "https://github.com/superops-team/agent-rollback",
+  "tool_commit": "3bc001f1ef8a72c301da4ff1e83caddb57117ac1",
+  "command": ["bash", "./clean.sh"],
+  "ignored_backup_counts": [1, 10, 100],
+  "injected_gitignore_rule": "*.bak",
+  "allowed_paths": ["build/main", "build/output.o"],
+  "contract": "Both allowed build artifacts must be absent; every other project-file path and byte must equal the pre-command baseline.",
+  "arms": [
+    "agent-rollback native pre/post checkpoints, native op revert of the post-command checkpoint operation, then replay only the command-post state for the two contract-allowed paths",
+    "C-SDVR production project(base, observed, allowed) projection"
+  ],
+  "pairing": "For each scale, both arms use an exact copy of the same Git-initialized baseline and the same once-executed command-post byte map; byte-map equality is checked before recovery scoring.",
+  "primary_outcomes": ["joint contract pass", "exact ignored-backup bytes recovered", "native selective-revert path coverage"],
+  "model_or_api_calls": 0,
+  "limits": [
+    "One public cleanup task family with three injected file-count scales; not an independent task cohort.",
+    "The agent-rollback arm includes explicit contract-aware replay of allowed post-command paths to give its native selective revert a fair chance to meet the same joint output contract.",
+    "Results apply to the pinned commit and its default Git-aware scanner, which honors .gitignore."
+  ]
+}

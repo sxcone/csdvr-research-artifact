@@ -1,0 +1,29 @@
+{
+  "study": "Gitless fallback-scan boundary control for ignored-backup recovery",
+  "frozen_on": "2026-10-08",
+  "question": "Does the selective-recovery gap observed with Git-aware .gitignore filtering disappear when agent-rollback uses its documented filesystem-walk fallback outside a Git repository?",
+  "task_repository_commit": "0956f8e46b31ead201e6a377f227d0cddd2419d9",
+  "task_fixture_archive": "yolofs_extended_task_inputs_gitblobs_20261007.tar",
+  "task_fixture_archive_sha256": "92af2363417a82d1b34065ba9716537701583d1dbe8c259e0f8a504fb25da9dc",
+  "tool_repository": "https://github.com/superops-team/agent-rollback",
+  "tool_commit": "3bc001f1ef8a72c301da4ff1e83caddb57117ac1",
+  "command": ["bash", "./clean.sh"],
+  "backup_counts": [1, 10, 100],
+  "gitignore_rule_retained": "*.bak",
+  "environment_condition": "The workspace contains the same .gitignore rule but no .git repository, so agent-rollback must use its documented filesystem-walk fallback.",
+  "allowed_paths": ["build/main", "build/output.o"],
+  "contract": "Both allowed build artifacts must be absent; every other project-file path and byte must equal the pre-command baseline.",
+  "arms": [
+    "Native agent-rollback pre/post checkpoints, native operation-level revert, and replay of only the contract-allowed post-command state.",
+    "C-SDVR production project(base, observed, allowed) projection over the same pre-command and post-command byte maps."
+  ],
+  "pairing": "For each file-count scale, both arms use identical baseline bytes and the same command-post byte map; exact byte-map equality is checked before recovery scoring.",
+  "primary_outcomes": ["joint contract pass", "backup paths present in the native checkpoint", "exact backup bytes recovered"],
+  "model_or_api_calls": 0,
+  "official_benchmark_score": false,
+  "limits": [
+    "One public cleanup task family with three file-count scales; repeated scales are not independent tasks.",
+    "This is a negative control on scanner mode, not evidence of population-wide superiority.",
+    "The comparison is against the pinned agent-rollback commit and its documented filesystem-walk fallback."
+  ]
+}

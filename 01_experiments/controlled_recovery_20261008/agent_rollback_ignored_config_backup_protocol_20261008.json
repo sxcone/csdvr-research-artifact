@@ -1,0 +1,29 @@
+{
+  "study": "Same-trajectory ignored-configuration recovery during backup creation",
+  "frozen_on": "2026-10-08",
+  "question": "Can C-SDVR preserve the produced archive while restoring pre-existing local configuration files omitted from a Git-aware rollback checkpoint?",
+  "task_repository": "https://github.com/YoloFS/agent-eval",
+  "task_repository_commit": "0956f8e46b31ead201e6a377f227d0cddd2419d9",
+  "task_fixture_archive": "yolofs_extended_task_inputs_gitblobs_20261007.tar",
+  "task_fixture_archive_sha256": "92af2363417a82d1b34065ba9716537701583d1dbe8c259e0f8a504fb25da9dc",
+  "tool_repository": "https://github.com/superops-team/agent-rollback",
+  "tool_commit": "3bc001f1ef8a72c301da4ff1e83caddb57117ac1",
+  "command": ["bash", "./backup.sh"],
+  "ignored_config_file_counts": [1, 10, 100],
+  "injected_gitignore_rules": ["config/settings.json", "config/user/*.json"],
+  "allowed_paths": ["backups/backup.tar.gz"],
+  "success_contract": "The archive must contain the exact command-pre src/ and config/ file bytes; every project path and byte outside the archive must equal the pre-command baseline.",
+  "arms": [
+    "agent-rollback native pre/post checkpoints followed by whole-checkpoint restore",
+    "agent-rollback native operation-level selective revert followed by replay of the exact allowed archive output",
+    "C-SDVR production project(base, observed, allowed) projection"
+  ],
+  "pairing": "Each recovery arm runs the same public command once from an exact Git-initialized baseline; recovered states are scored against that baseline and the same frozen archive path contract.",
+  "primary_outcomes": ["joint contract pass", "exact ignored configuration bytes restored", "archive members and bytes verified", "checkpoint coverage"],
+  "model_or_api_calls": 0,
+  "limits": [
+    "One additional public task family with three injected local-configuration scales; not a broad independent benchmark.",
+    "The config ignore rules model machine-local configuration excluded from source control.",
+    "Results apply to the pinned agent-rollback version and its default Git-aware inventory."
+  ]
+}

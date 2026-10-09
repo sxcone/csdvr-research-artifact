@@ -1,0 +1,211 @@
+{
+  "study": "Frozen manifest of exact Git blob inputs for six-task YoloFS replay",
+  "repository": "YoloFS agent-eval task fixtures",
+  "repository_commit": "0956f8e46b31ead201e6a377f227d0cddd2419d9",
+  "materialization": "git archive of the pinned commit; byte-for-byte blobs, excluding Windows checkout line-ending conversion",
+  "source_archive": "yolofs_extended_task_inputs_gitblobs_20261007.tar",
+  "source_archive_sha256": "92af2363417a82d1b34065ba9716537701583d1dbe8c259e0f8a504fb25da9dc",
+  "tasks": [
+    {
+      "task": "cleanup",
+      "file_count": 6,
+      "files": [
+        {
+          "path": "build/main",
+          "sha256": "734ad045f93cbd5d97bfd4e6a27688989749dfdef866df185d5396c149a5b371",
+          "bytes": 21
+        },
+        {
+          "path": "build/output.o",
+          "sha256": "5bf6640a63fe05a3b300ef5b91b1826618bc5de3c3c46955978fb70f6972b812",
+          "bytes": 20
+        },
+        {
+          "path": "clean.sh",
+          "sha256": "47da58e9511f9fa2e0466c17204b94d0d7279bdf139616defd35854f7adc318f",
+          "bytes": 129
+        },
+        {
+          "path": "README.md",
+          "sha256": "f780781032c1edcc8247ea537f64d20974f47c8d2b6301b1ccfd126bfb065ded",
+          "bytes": 56
+        },
+        {
+          "path": "src/main.c",
+          "sha256": "9afc47f7b7fc228bf41ff2f5d71b3586a5ad7381b3a36edcd51e4668d27a7bd1",
+          "bytes": 71
+        },
+        {
+          "path": "src/main.c.bak",
+          "sha256": "922f92c89fd754883c1c5df6da3976ff0b626fd8267b4f4e0ab6f99ed22f1722",
+          "bytes": 77
+        }
+      ]
+    },
+    {
+      "task": "deploy",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "deploy.sh",
+          "sha256": "ac9dafa80a546d07ee03e1431fa88c3739b0c23e34b66dea749c92d0a646b8d7",
+          "bytes": 146
+        },
+        {
+          "path": "src/app.js",
+          "sha256": "ab5eb6457efde6e2e54b3de5541c37fd784bab82af476f6da2eb4a1b4b12a10e",
+          "bytes": 29
+        },
+        {
+          "path": "src/index.html",
+          "sha256": "8586ddbac44f106c7b2f582b5302fdbb4cf230758f1b03ba542df0d1f6f43157",
+          "bytes": 48
+        },
+        {
+          "path": "src/style.css",
+          "sha256": "1b98965e8c4baf660e5debb96834121f5fb56bd1a13d31accbc08e0e8299e169",
+          "bytes": 32
+        }
+      ]
+    },
+    {
+      "task": "backup",
+      "file_count": 5,
+      "files": [
+        {
+          "path": "backup.sh",
+          "sha256": "c7c83844f61115fc87290afffedfc2255a2edb68f79158c6e23a3058ddb3f47e",
+          "bytes": 180
+        },
+        {
+          "path": "config/logging.json",
+          "sha256": "be9da316682617cf28dd6719c7a5a553c00e72ceb0651b4d69e2bae195a7f3b0",
+          "bytes": 37
+        },
+        {
+          "path": "config/settings.json",
+          "sha256": "e46b1c8be87722ff7608f31c3c6919dc0734c0d588e79abaa78481c2cca3002d",
+          "bytes": 40
+        },
+        {
+          "path": "src/main.py",
+          "sha256": "3b58fa50ffe24c21a12914e6ba86a800a45d2cd10cfd5c848ea97ac07fc8ff3e",
+          "bytes": 54
+        },
+        {
+          "path": "src/utils.py",
+          "sha256": "d4e51452e4fcf07b9b2eeea9c02af2919df1c1338c5d027b86049b356c9af919",
+          "bytes": 28
+        }
+      ]
+    },
+    {
+      "task": "build_package",
+      "file_count": 8,
+      "files": [
+        {
+          "path": "LICENSE",
+          "sha256": "b44d3625dd09c751bb428cbec36c232593519920ac2a66cde6477c7fc54c01f6",
+          "bytes": 32
+        },
+        {
+          "path": "Makefile",
+          "sha256": "679bf7957f3a24a84bb80ce7e84dfc78c8a09f56412613002d5be5a9fa7ee6f6",
+          "bytes": 53
+        },
+        {
+          "path": "README.md",
+          "sha256": "966609ec5495ab8cd82b1b6e56a9d40485b81e823bbc514549f2eefa45d5b1a3",
+          "bytes": 69
+        },
+        {
+          "path": "scripts/build.py",
+          "sha256": "f5d6f308583a3c28ccfb3c9eee3d070cb2f4ab5f34e9081dca741b10f169a986",
+          "bytes": 185
+        },
+        {
+          "path": "scripts/package.sh",
+          "sha256": "27e699cab3ee3c57b293da5eaf76942fed9d7595d96d1b72582cbcfacea7826e",
+          "bytes": 144
+        },
+        {
+          "path": "src/config.py",
+          "sha256": "3f6847030df3c7780145e0b236a1fdbf0fd215e334516ffb4b5f866f54b1c548",
+          "bytes": 37
+        },
+        {
+          "path": "src/lib.py",
+          "sha256": "94809fb9f5ae97015fe56a5b70a0fe9f3d4aababde1c055fb9ac37fc58fad59f",
+          "bytes": 42
+        },
+        {
+          "path": "src/main.py",
+          "sha256": "6811900dd688800bb9deb5e9653afaeef572826b800f6cf19b0dddfc3e928bea",
+          "bytes": 90
+        }
+      ]
+    },
+    {
+      "task": "formatter",
+      "file_count": 6,
+      "files": [
+        {
+          "path": ".formatrc",
+          "sha256": "208c7a95eac5792c736a658867bc7ff7d91b6a3f01afa4c713298fa759c04778",
+          "bytes": 41
+        },
+        {
+          "path": "docs/notes.txt",
+          "sha256": "1b5a4174dca0c3d048aba76f8179138cce379fe67dc6d4ccaae6ec60a4772c28",
+          "bytes": 42
+        },
+        {
+          "path": "docs/todo.txt",
+          "sha256": "bcb3f196ec12f2b2a85af96e5e7721e3b02dd74291d710cf1010e4241e63c1ce",
+          "bytes": 56
+        },
+        {
+          "path": "format.sh",
+          "sha256": "9d8fc2e5b4c62f57c484aa691c96c26c3ec7c05e0f19efe3b190cd2dbadf7f92",
+          "bytes": 298
+        },
+        {
+          "path": "src/app.js",
+          "sha256": "d198d28809098d6cb7fdb01a2b642054c00ba23a5fc2e0eaace010837644b8da",
+          "bytes": 81
+        },
+        {
+          "path": "src/test.js",
+          "sha256": "f7807534cada9c061ba615d29ed4be9e62c8adb2234e28a0235d62ea16417cac",
+          "bytes": 51
+        }
+      ]
+    },
+    {
+      "task": "docs",
+      "file_count": 4,
+      "files": [
+        {
+          "path": "docs/api.md",
+          "sha256": "b971a57d86359835b6b10b255afd5709e370ec180950ac756defc1872feba34d",
+          "bytes": 130
+        },
+        {
+          "path": "docs/guide.md",
+          "sha256": "9896a0d4a1efcc56c2325ec67d13c36971155641b1f69d91c409166c3aa144da",
+          "bytes": 133
+        },
+        {
+          "path": "generate_docs.py",
+          "sha256": "fc29a7c0a861391b03d5af43ff30b73ba5e8b69bca68f2190e9a8dd9050e0d60",
+          "bytes": 315
+        },
+        {
+          "path": "src/module.py",
+          "sha256": "a0bdb3903c5b31929568d85288ae8a7062facc87ee3f8440009f3f8941dab6db",
+          "bytes": 109
+        }
+      ]
+    }
+  ]
+}

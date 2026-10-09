@@ -25,3 +25,7 @@ Example local runs:
 Endpoint-backed scripts read the variables shown in .env.example. Configure real credentials only in an ignored local .env file or in the shell. Such runs may send requests to a paid model endpoint.
 
 Generated tables, logs, and figures are written under 02_results/ and are excluded from version control. The synthetic task input remains tracked so the executable benchmark can run from a fresh checkout.
+
+## Controlled recovery comparisons
+
+The pinned Agent-Rollback ignored-file comparisons and six-task YoloFS extension are reported in the manuscript supplement. Portable runners, frozen protocols, and a SHA-256-verified input fetcher are in [01_experiments/controlled_recovery_20261008/](01_experiments/controlled_recovery_20261008/README.md). The task files are fetched from their pinned upstream commit and are not redistributed in this code repository. Sanitized case-level results and protocol data are archived in a separate [Zenodo companion record](https://doi.org/10.5281/zenodo.23260432); the existing 40-task cohort DOI remains unchanged.

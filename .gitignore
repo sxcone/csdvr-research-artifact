@@ -25,3 +25,7 @@ tmp/
 *.synctex.gz
 *.xdv
 /02_results/
+
+# Controlled recovery comparison inputs and generated results
+/01_experiments/controlled_recovery_20261008/tasks_opaque/
+/01_experiments/controlled_recovery_20261008/*_results.json
